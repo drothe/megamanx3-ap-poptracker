@@ -46,7 +46,7 @@
             },
             {
                 "name": "Blizzard Buffalo",
-                "access_rules": ["blizzard_buffalo_1"],
+                "access_rules": ["stage_blizzard_buffalo"],
                 "sections": [
                     {
                         "name": "Heart Tank",
@@ -120,7 +120,7 @@
             },
             {
                 "name": "Toxic Seahorse",
-                "access_rules": ["toxic_seahorse_1"],
+                "access_rules": ["stage_toxic_seahorse"],
                 "sections": [
                     {
                         "name": "HP Pickup 1 (Bottom of falling water section)",
@@ -196,7 +196,7 @@
             },
             {
                 "name": "Tunnel Rhino",
-                "access_rules": ["tunnel_rhino_1"],
+                "access_rules": ["stage_tunnel_rhino"],
                 "sections": [
                     {
                         "name": "Heart Tank",
@@ -262,7 +262,7 @@
             },
             {
                 "name": "Volt Catfish",
-                "access_rules": ["volt_catfish_1"],
+                "access_rules": ["stage_volt_catfish"],
                 "sections": [
                     {
                         "name": "HP Pickup 1 (In first elevator)",
@@ -354,7 +354,7 @@
             },
             {
                 "name": "Crush Crawfish",
-                "access_rules": ["crush_crawfish_1"],
+                "access_rules": ["stage_crush_crawfish"],
                 "sections": [
                     {
                         "name": "Hawk Ride Armor",
@@ -454,7 +454,7 @@
             },
             {
                 "name": "Neon Tiger",
-                "access_rules": ["neon_tiger_1"],
+                "access_rules": ["stage_neon_tiger"],
                 "sections": [
                     {
                         "name": "HP Pickup 1 (Below first ladder)",
@@ -530,13 +530,13 @@
             },
             {
                 "name": "Gravity Beetle",
-                "access_rules": ["gravity_beetle_1"],
+                "access_rules": ["stage_gravity_beetle"],
                 "sections": [
                     
                     {
                         "name": "Heart Tank",
                         "chest_unopened_img": "images/icons/heart.png",
-                        "access_rules": ["blast_hornet_2"]
+                        "access_rules": ["blast_hornet_cleared"]
                     },
                     {
                         "name": "HP Pickup 1 (In cranes and boxes room)",

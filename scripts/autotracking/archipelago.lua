@@ -357,10 +357,13 @@ function onItem(index, item_id, item_name, player_number)
     --    Tracker:FindObjectForCode('stage_vile').Active = true
     --end
     if is_bit_open() then
-        set_stage_state_unlocked('bit_state')
+        local obj = Tracker:FindObjectForCode("bit_access")
+        obj.Active = true
     end
     if is_byte_open() then
-        set_stage_state_unlocked('byte_state')
+        local obj = Tracker:FindObjectForCode("byte_access")
+        obj.Active = true
+
     end
     if item_id == 12386334 then
         local arms = Tracker:FindObjectForCode("arms")
@@ -405,52 +408,36 @@ function onLocation(location_id, location_name)
     if location_id == 12451968 then
         local obj = Tracker:FindObjectForCode("blizzard_buffalo_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("blizzard_buffalo_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451969 then
         local obj = Tracker:FindObjectForCode("toxic_seahorse_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("toxic_seahorse_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451970 then
         local obj = Tracker:FindObjectForCode("tunnel_rhino_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("tunnel_rhino_state")
-        state.CurrentStage = 2
     end
     
     if location_id == 12451971 then
         local obj = Tracker:FindObjectForCode("volt_catfish_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("volt_catfish_state")
-        state.CurrentStage = 2
     end
     
     if location_id == 12451972 then
         local obj = Tracker:FindObjectForCode("crush_crawfish_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("crush_crawfish_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451973 then
         local obj = Tracker:FindObjectForCode("neon_tiger_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("neon_tiger_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451974 then
         local obj = Tracker:FindObjectForCode("gravity_beetle_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("gravity_beetle_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451975 then
         local obj = Tracker:FindObjectForCode("blast_hornet_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("blast_hornet_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451854 then
         local obj = Tracker:FindObjectForCode("doppler_1_cleared")
@@ -467,20 +454,14 @@ function onLocation(location_id, location_name)
     if location_id == 12451870 then
         local obj = Tracker:FindObjectForCode("bit_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("bit_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451871 then
         local obj = Tracker:FindObjectForCode("byte_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("byte_state")
-        state.CurrentStage = 2
     end
     if location_id == 12451869 then
         local obj = Tracker:FindObjectForCode("vile_cleared")
         obj.Active = true
-        local state = Tracker:FindObjectForCode("vile_state")
-        state.CurrentStage = 2
     end
 
     --refresh access rules logic

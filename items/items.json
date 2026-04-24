@@ -377,30 +377,34 @@
       "codes": "toxic_seahorse_refight_cleared"
     },
     {
-        "name": "Toxic Seahorse State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "toxic_seahorse_state",
-        "stages": [
-          {
-            "img": "images/icons/toxicseahorse_gray.png",
-            "name": "Toxic Seahorse Locked",
-            "codes": "toxic_seahorse_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/toxicseahorse.png",
-            "name": "Toxic Seahorse Open",
-            "codes": "toxic_seahorse_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/toxicseahorse_x.png",
-            "name": "Toxic Seahorse Defeated",
-            "codes": "toxic_seahorse_2",
-            "inherit_codes": true
-          }
+        "name": "Toxic Seahorse",
+        "type": "composite_toggle",
+        "item_left": "stage_toxic_seahorse",
+        "item_right": "toxic_seahorse_cleared",
+        "codes": "toxic_seahorse_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/toxicseahorse_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/toxicseahorse.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/toxicseahorse_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/toxicseahorse.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
     },
     {
@@ -416,30 +420,34 @@
       "codes": "volt_catfish_refight_cleared"
     },
     {
-        "name": "Volt Catfish State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "volt_catfish_state",
-        "stages": [
-          {
-            "img": "images/icons/voltcatfish_gray.png",
-            "name": "Volt Catfish Locked",
-            "codes": "volt_catfish_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/voltcatfish.png",
-            "name": "Volt Catfish Open",
-            "codes": "volt_catfish_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/voltcatfish_x.png",
-            "name": "Volt Catfish Defeated",
-            "codes": "volt_catfish_2",
-            "inherit_codes": true
-          }
+        "name": "Volt Catfish",
+        "type": "composite_toggle",
+        "item_left": "stage_volt_catfish",
+        "item_right": "volt_catfish_cleared",
+        "codes": "volt_catfish_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/voltcatfish_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/voltcatfish.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/voltcatfish_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/voltcatfish.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
     },
     {
@@ -455,30 +463,34 @@
       "codes": "tunnel_rhino_refight_cleared"
     },
     {
-        "name": "Tunnel Rhino State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "tunnel_rhino_state",
-        "stages": [
-          {
-            "img": "images/icons/tunnelrhino_gray.png",
-            "name": "Tunnel Rhino Locked",
-            "codes": "tunnel_rhino_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/tunnelrhino.png",
-            "name": "Tunnel Rhino Open",
-            "codes": "tunnel_rhino_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/tunnelrhino_x.png",
-            "name": "Tunnel Rhino Defeated",
-            "codes": "tunnel_rhino_2",
-            "inherit_codes": true
-          }
+        "name": "Tunnel Rhino",
+        "type": "composite_toggle",
+        "item_left": "stage_tunnel_rhino",
+        "item_right": "tunnel_rhino_cleared",
+        "codes": "tunnel_rhino_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/tunnelrhino_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/tunnelrhino.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/tunnelrhino_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/tunnelrhino.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
     },
     {
@@ -494,32 +506,36 @@
       "codes": "blizzard_buffalo_refight_cleared"
     },
     {
-        "name": "Blizzard Buffalo State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "blizzard_buffalo_state",
-        "stages": [
-          {
-            "img": "images/icons/blizzardbuffalo_gray.png",
-            "name": "Blizzard Buffalo Locked",
-            "codes": "blizzard_buffalo_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/blizzardbuffalo.png",
-            "name": "Blizzard Buffalo Open",
-            "codes": "blizzard_buffalo_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/blizzardbuffalo_x.png",
-            "name": "Blizzard Buffalo Defeated",
-            "codes": "blizzard_buffalo_2",
-            "inherit_codes": true
-          }
+        "name": "Blizzard Buffalo",
+        "type": "composite_toggle",
+        "item_left": "stage_blizzard_buffalo",
+        "item_right": "blizzard_buffalo_cleared",
+        "codes": "blizzard_buffalo_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/blizzardbuffalo_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/blizzardbuffalo.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/blizzardbuffalo_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/blizzardbuffalo.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
-    },
+    },    
     {
         "name": "Crush Crawfish Cleared",
         "type": "toggle",
@@ -533,30 +549,34 @@
       "codes": "crush_crawfish_refight_cleared"
     },
     {
-        "name": "Crush Crawfish State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "crush_crawfish_state",
-        "stages": [
-          {
-            "img": "images/icons/crushcrawfish_gray.png",
-            "name": "Crush Crawfish Locked",
-            "codes": "crush_crawfish_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/crushcrawfish.png",
-            "name": "Crush Crawfish Open",
-            "codes": "crush_crawfish_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/crushcrawfish_x.png",
-            "name": "Crush Crawfish Defeated",
-            "codes": "crush_crawfish_2",
-            "inherit_codes": true
-          }
+        "name": "Crush Crawfish",
+        "type": "composite_toggle",
+        "item_left": "stage_crush_crawfish",
+        "item_right": "crush_crawfish_cleared",
+        "codes": "crush_crawfish_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/crushcrawfish_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/crushcrawfish.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/crushcrawfish_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/crushcrawfish.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
     },
     {
@@ -570,32 +590,36 @@
       "codes": "neon_tiger_refight_cleared"
     },
     {
-        "name": "Neon Tiger State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "neon_tiger_state",
-        "stages": [
-          {
-            "img": "images/icons/neontiger_gray.png",
-            "name": "Neon Tiger Locked",
-            "codes": "neon_tiger_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/neontiger.png",
-            "name": "Neon Tiger Open",
-            "codes": "neon_tiger_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/neontiger_x.png",
-            "name": "Neon Tiger Defeated",
-            "codes": "neon_tiger_2",
-            "inherit_codes": true
-          }
+        "name": "Neon Tiger",
+        "type": "composite_toggle",
+        "item_left": "stage_neon_tiger",
+        "item_right": "neon_tiger_cleared",
+        "codes": "neon_tiger_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/neontiger_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/neontiger.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/neontiger_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/neontiger.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
-    },
+    },    
     {
         "name": "Gravity Beetle Cleared",
         "type": "toggle",
@@ -607,30 +631,34 @@
       "codes": "gravity_beetle_refight_cleared"
     },
     {
-        "name": "Gravity Beetle State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "gravity_beetle_state",
-        "stages": [
-          {
-            "img": "images/icons/gravitybeetle_gray.png",
-            "name": "Gravity Beetle Locked",
-            "codes": "gravity_beetle_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/gravitybeetle.png",
-            "name": "Gravity Beetle Open",
-            "codes": "gravity_beetle_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/gravitybeetle_x.png",
-            "name": "Gravity Beetle Defeated",
-            "codes": "gravity_beetle_2",
-            "inherit_codes": true
-          }
+        "name": "Gravity Beetle",
+        "type": "composite_toggle",
+        "item_left": "stage_gravity_beetle",
+        "item_right": "gravity_beetle_cleared",
+        "codes": "gravity_beetle_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/gravitybeetle_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/gravitybeetle.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/gravitybeetle_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/gravitybeetle.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
     },
     {
@@ -646,31 +674,40 @@
       "codes": "blast_hornet_refight_cleared"
     },
     {
-        "name": "Blast Hornet State",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "codes": "blast_hornet_state",
-        "stages": [
-          {
-            "img": "images/icons/blasthornet_gray.png",
-            "name": "Blast Hornet Locked",
-            "codes": "blast_hornet_0",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/blasthornet.png",
-            "name": "Blast Hornet Open",
-            "codes": "blast_hornet_1",
-            "inherit_codes": true
-          },
-          {
-            "img": "images/icons/blasthornet_x.png",
-            "name": "Blast Hornet Defeated",
-            "codes": "blast_hornet_2",
-            "inherit_codes": true
-          }
+        "name": "Blast Hornet",
+        "type": "composite_toggle",
+        "item_left": "stage_blast_hornet",
+        "item_right": "blast_hornet_cleared",
+        "codes": "blast_hornet_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/gravitybeetle_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/gravitybeetle.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/gravitybeetle_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/gravitybeetle.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
         ]
+    },
+    {
+      "name": "Bit Open",
+      "type": "toggle",
+      "codes": "bit_access"
     },
     {
       "name": "Bit Defeated",
@@ -678,64 +715,77 @@
       "codes": "bit_cleared"
     },
     {
-      "name": "Bit State",
-      "type": "progressive",
-      "loop": false,
-      "allow_disabled": false,
-      "codes": "bit_state",
-      "stages": [
-        {
-          "img": "images/icons/bit_gray.png",
-          "name": "Bit Locked",
-          "codes": "bit_state_0",
-          "inherit_codes": true
-        },
-        {
-          "img": "images/icons/bit.png",
-          "name": "Bit Open",
-          "codes": "bit_state_1",
-          "inherit_codes": true
-        },
-        {
-          "img": "images/icons/bit_x.png",
-          "name": "Bit Defeated",
-          "codes": "bit_state_2",
-          "inherit_codes": true
-        }
-      ]
-  },
+        "name": "Bit",
+        "type": "composite_toggle",
+        "item_left": "bit_access",
+        "item_right": "bit_cleared",
+        "codes": "bit_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/bit_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/bit.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/bit_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/bit.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
+        ]
+    },
+    {
+      "name": "Byte Open",
+      "type": "toggle",
+      "codes": "byte_access"
+    },
     {
       "name": "Byte Defeated",
       "type": "toggle",
       "codes": "byte_cleared"
     },
     {
-      "name": "Byte State",
-      "type": "progressive",
-      "loop": false,
-      "allow_disabled": false,
-      "codes": "byte_state",
-      "stages": [
-        {
-          "img": "images/icons/byte_gray.png",
-          "name": "Byte Locked",
-          "codes": "byte_state_0",
-          "inherit_codes": true
-        },
-        {
-          "img": "images/icons/byte.png",
-          "name": "Byte Open",
-          "codes": "byte_state_1",
-          "inherit_codes": true
-        },
-        {
-          "img": "images/icons/byte_x.png",
-          "name": "Byte Defeated",
-          "codes": "byte_state_2",
-          "inherit_codes": true
-        }
-      ]
-  },
+        "name": "Byte",
+        "type": "composite_toggle",
+        "item_left": "byte_access",
+        "item_right": "byte_cleared",
+        "codes": "byte_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/byte_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/byte.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/byte_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/byte.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
+        ]
+    },
     {
         "name": "Dr. Droppler 1 Cleared",
         "type": "toggle",
@@ -777,40 +827,48 @@
           "inherit_codes": true
         }
       ]
-  },
+    },
+    {
+      "name": "Vile Open",
+      "type": "toggle",
+      "codes": "vile_access"
+    },
     {
       "name": "Vile Cleared",
       "type": "toggle",
       "codes": "vile_cleared"
     },
     {
-      "name": "Vile State",
-      "type": "progressive",
-      "loop": false,
-      "allow_disabled": false,
-      "codes": "vile_state",
-      "stages": [
-        {
-          "img": "images/icons/vile_gray.png",
-          "name": "Vile Locked",
-          "codes": "vile_state_0",
-          "inherit_codes": true
-        },
-        {
-          "img": "images/icons/vile.png",
-          "name": "Vile Open",
-          "codes": "vile_state_1",
-          "inherit_codes": true
-        },
-        {
-          "img": "images/icons/vile_x.png",
-          "name": "Vile Defeated",
-          "codes": "vile_state_2",
-          "inherit_codes": true
-        }
-      ]
-  },
-
+        "name": "Vile",
+        "type": "composite_toggle",
+        "item_left": "vile_access",
+        "item_right": "vile_cleared",
+        "codes": "vile_toggle",
+        "images": [
+            {
+                "left": false,
+                "right": false,
+                "img": "images/icons/vile_gray.png"
+            },
+            {
+                "left": true,
+                "right": false,
+                "img": "images/icons/vile.png"
+            },
+            {
+                "left": false,
+                "right": true,
+                "img": "images/icons/vile_gray.png",
+                "img_mods": "overlay|images/icons/x.png"
+            },
+            {
+                "left": true,
+                "right": true,
+                "img": "images/icons/vile.png",
+                "img_mods": "overlay|images/icons/x.png"
+            }
+        ]
+    },
     {
         "name": "Pickupsanity",
         "type": "progressive",

@@ -103,13 +103,9 @@ end
 
 
 function update_vile_state()
-    local vilestate = Tracker:FindObjectForCode('vile_state')
-    if Tracker:FindObjectForCode('vile_cleared').Active then
-        vilestate.CurrentStage = 2
-    elseif is_vile_open() then
-        vilestate.CurrentStage = 1
-    else
-        vilestate.CurrentStage = 0
+    if is_vile_open() then
+        local vile_state = Tracker:FindObjectForCode('vile_state')
+        vile_state.Active = true
     end
 end
 

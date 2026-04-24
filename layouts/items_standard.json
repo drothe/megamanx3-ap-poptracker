@@ -15,9 +15,9 @@
                         "item_size": 50,
                         "h_alignment": "left",
                         "rows": [
-                            ["blast_hornet_state", "blizzard_buffalo_state", "gravity_beetle_state", "toxic_seahorse_state"],
-                            ["volt_catfish_state", "crush_crawfish_state", "tunnel_rhino_state", "neon_tiger_state"],
-                            ["vile_state", "bit_state", "byte_state", "drdoppler_state"],
+                            ["blast_hornet_toggle", "blizzard_buffalo_toggle", "gravity_beetle_toggle", "toxic_seahorse_toggle"],
+                            ["volt_catfish_toggle", "crush_crawfish_toggle", "tunnel_rhino_toggle", "neon_tiger_toggle"],
+                            ["vile_toggle", "bit_toggle", "byte_toggle", "drdoppler_state"],
                             ["parasitic_bomb", "frost_shield", "gravity_well", "acid_burst"],
                             ["triad_thunder", "spinning_blade", "tornado_fang", "ray_splasher"],
                             ["ride_chimera", "ride_kangaroo", "ride_hawk", "ride_frog"],
